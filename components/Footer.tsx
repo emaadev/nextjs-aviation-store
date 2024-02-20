@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 w-full h-[400px] bg-footer-texture flex justify-around">
+    <footer className="bg-gray-300 w-full h-[400px] bg-footer-texture flex justify-around">
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col justify-center items-center mb-4">
           <Image src="/logo.png" width="180" height="180" alt="ISEAP Logo" />
