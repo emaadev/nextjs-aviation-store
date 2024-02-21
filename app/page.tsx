@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import CategorySelector from "@/components/shared/CategorySelector";
 import TrustedBrands from "@/components/shared/TrustedBrands";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="relative">
       <Hero />
       <TrustedBrands />
+      <CategorySelector />
     </main>
   );
 }

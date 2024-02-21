@@ -1,7 +1,8 @@
 import Image from "next/image";
 
-import banner from "@/public/banner-1.jpg";
 import Button from "@/components/ui/Button";
+
+import banner from "@/public/banner-1.jpg";
 
 const Hero = () => {
   return (
