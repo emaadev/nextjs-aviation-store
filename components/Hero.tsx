@@ -5,9 +5,9 @@ import Button from "@/components/ui/Button";
 
 const Hero = () => {
   return (
-    <section className="relative w-full">
+    <section className="relative w-full h-[100vh]">
       <Image
-        className="w-full object-contain bg-[200px]"
+        className="w-full h-full object-cover"
         src={banner}
         alt="Airport Image"
         priority
