@@ -3,6 +3,7 @@ import CategorySelector from "@/components/CategorySelector";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import TrustedBrands from "@/components/shared/TrustedBrands";
 import CompanyBenefits from "@/components/CompanyBenefits";
+import FAQ from "@/components/FAQ";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <CategorySelector />
       <FeaturedProducts />
       <CompanyBenefits />
+      <FAQ />
     </main>
   );
 }
