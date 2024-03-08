@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import CategorySelector from "@/components/shared/CategorySelector";
+import CategorySelector from "@/components/CategorySelector";
 import FeaturedProducts from "@/components/shared/FeaturedProducts";
 import TrustedBrands from "@/components/shared/TrustedBrands";
 
