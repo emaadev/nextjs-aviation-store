@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Product from "./Product";
+import Product from "./shared/Product";
 
 import iPhone15ProImg from "@/public/apple-iphone-15-pro-1tb-blue-titanium.png";
 import iPhone15ProMaxImg from "@/public/apple-iphone-15-pro-max-256gb-natural-titanium.png";
