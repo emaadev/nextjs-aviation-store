@@ -1,24 +1,14 @@
 import Image from "next/image";
 
 interface ProductProps {
-  isOutOfStock: boolean;
-  title: string;
-  category: string;
-  price: number;
-  colors: string[];
-  image: any;
-  productsLeft: number;
+  product: any;
 }
 
-const Product = ({
-  isOutOfStock,
-  image,
-  title,
-  category,
-  price,
-  productsLeft,
-  colors,
-}: ProductProps) => {
+const Product = ({ product }: ProductProps) => {
+  const { stock, image, name, category, price, colors } = product;
+
+  const isOutOfStock = stock === 0;
+
   return (
     <div className="flex justify-center items-center bg-white rounded-xl shadow-lg gap-10">
       <div className="relative w-[350px] h-[450px] flex flex-col justify-center items-start p-[20px]">
@@ -33,7 +23,7 @@ const Product = ({
         </div>
 
         <div className="flex flex-col items-start justify-center">
-          <h4 className="font-bold text-[19px]">{title}</h4>
+          <h4 className="font-bold text-[19px]">{name}</h4>
           <span className="text-gray-600 font-light italic text-[14px]">
             {category}
           </span>
@@ -41,14 +31,18 @@ const Product = ({
 
         <div className="flex justify-start items-center gap-4 mb-[10px]">
           <p className="font-extrabold text-[22px]">$ {price}</p>
-          <span className="font-bold text-blue-600">
-            {productsLeft} product/s in stock
+          <span
+            className={`font-bold ${
+              stock === 0 ? "text-red-600" : "text-blue-600"
+            }`}
+          >
+            {stock} product/s in stock
           </span>
         </div>
 
         <div className="flex justify-start items-center gap-2">
-          {colors.map((item, index) => (
-            <div key={index} className={`w-8 h-8 rounded-full ${item}`} />
+          {colors.map((color: any, index: any) => (
+            <div key={index} className={`w-8 h-8 rounded-full ${color}`} />
           ))}
         </div>
       </div>

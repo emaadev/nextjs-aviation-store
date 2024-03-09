@@ -3,11 +3,11 @@ import Link from "next/link";
 
 import Product from "./shared/Product";
 
-import iPhone15ProImg from "@/public/apple-iphone-15-pro-1tb-blue-titanium.png";
-import iPhone15ProMaxImg from "@/public/apple-iphone-15-pro-max-256gb-natural-titanium.png";
-import appleWatchUltra from "@/public/apple-watch-ultra-2.png";
+interface FeaturedProductsProps {
+  products: any;
+}
 
-const FeaturedProducts = () => {
+const FeaturedProducts = ({ products }: FeaturedProductsProps) => {
   return (
     <section className="relative flex flex-col justify-center items-center bg-gray-200 py-[50px] shadow-inner">
       <div className="flex flex-col justify-center items-center mb-[20px]">
@@ -16,35 +16,11 @@ const FeaturedProducts = () => {
       </div>
 
       <div className="flex justify-center items-center gap-4">
-        <Product
-          isOutOfStock={false}
-          title={"SmartWatch iOS 2.14”"}
-          category={"SmartWachs & Tech"}
-          price={19.99}
-          colors={["bg-blue-600", "bg-gray-900", "bg-gray-400"]}
-          image={iPhone15ProImg}
-          productsLeft={6}
-        />
-
-        <Product
-          isOutOfStock={true}
-          title={"SmartWatch iOS 2.14”"}
-          category={"SmartWachs & Tech"}
-          price={19.99}
-          colors={["bg-blue-600", "bg-gray-900", "bg-gray-400"]}
-          image={iPhone15ProMaxImg}
-          productsLeft={6}
-        />
-
-        <Product
-          isOutOfStock={true}
-          title={"SmartWatch iOS 2.14”"}
-          category={"SmartWachs & Tech"}
-          price={19.99}
-          colors={["bg-blue-600", "bg-gray-900", "bg-gray-400"]}
-          image={appleWatchUltra}
-          productsLeft={6}
-        />
+        {products.map((product: any, index: any) => (
+          <div key={index}>
+            <Product product={product} />
+          </div>
+        ))}
       </div>
 
       <div className="relative m-auto mt-[50px]">
