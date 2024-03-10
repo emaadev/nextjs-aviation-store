@@ -8,7 +8,7 @@ export const allProducts = [
     name: "Laptop",
     description:
       "15-inch laptop with high-resolution display and powerful performance for professionals.",
-    category: "Technology",
+    category: "Laptop",
     price: 999.99,
     isFeatured: true,
     stock: 0,
@@ -20,7 +20,19 @@ export const allProducts = [
     name: "Smartphone",
     description:
       "Sleek and modern smartphone with a large screen, long-lasting battery, and high-quality camera.",
-    category: "Technology",
+    category: "iPhone",
+    price: 699.99,
+    isFeatured: true,
+    stock: 10,
+    colors: ["bg-blue-600", "bg-gray-900", "bg-gray-400"],
+    images: [iPhone15ProMaxImg],
+  },
+  {
+    id: "hdudhuwiqdu12bdu21bdu",
+    name: "Smartphone",
+    description:
+      "Sleek and modern smartphone with a large screen, long-lasting battery, and high-quality camera.",
+    category: "iPhone",
     price: 699.99,
     isFeatured: true,
     stock: 10,
@@ -56,7 +68,7 @@ export const allProducts = [
     name: "Wireless Headphones",
     description:
       "Comfortable wireless headphones with noise cancellation and high-quality sound.",
-    category: "Technology",
+    category: "Headphones",
     price: 199.99,
     isFeatured: false,
     stock: 10,

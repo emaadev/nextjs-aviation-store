@@ -25,7 +25,7 @@ const FeaturedProducts = ({ products }: FeaturedProductsProps) => {
 
       <div className="relative m-auto mt-[50px]">
         <Link
-          href="/"
+          href="/products"
           className="h-[70px] bg-black text-center shadow-lg rounded-lg text-white text-md py-2 px-6 font-semibold"
         >
           See All Products →
