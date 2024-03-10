@@ -19,19 +19,22 @@ const Gallery = ({ images }: GalleryProps) => {
       <article className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
         <div className="grid grid-cols-5 gap-2">
           {images.map((image: any, index: any) => (
-            <div onClick={() => handleImage(image)} key={index}>
+            <div
+              onClick={() => handleImage(image)}
+              key={index}
+              className={`aspect-square relative group w-full h-full sm:rounded-lg overflow-hidden cursor-pointer transition-all ${
+                imageSelected === image && "border-[2px] border-gray-500"
+              }`}
+            >
               <div
-                className={`aspect-square relative w-full h-full sm:rounded-lg overflow-hidden cursor-pointer ${
-                  imageSelected === image && "border-[2px] border-gray-500"
-                }`}
-              >
-                <Image
-                  src={image}
-                  alt="Single Image"
-                  fill
-                  className="w-full object-contain object-center"
-                />
-              </div>
+                className={`bg-gray-100 absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 transition-all`}
+              />
+              <Image
+                src={image}
+                alt="Single Image"
+                fill
+                className="w-full object-contain object-center"
+              />
             </div>
           ))}
         </div>

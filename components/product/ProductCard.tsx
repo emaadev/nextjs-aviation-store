@@ -45,10 +45,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
           className="object-contain w-full rounded-md"
         />
 
+        {/* TODO: Preview Mode */}
         <div className="absolute bottom-0 w-full h-20 bg-gradient-to-t from-gray-800 opacity-0 group-hover:opacity-100 rounded-b-xl transition" />
 
-        {/* TODO: Preview Mode */}
-        <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5 ">
+        <div className="opacity-0 group-hover:opacity-100 transition-all absolute w-full px-6 bottom-5 ">
           <div className="flex gap-x-6 justify-center">
             <Button className="bg-white">
               <LuExpand className="w-6 h-6 text-gray-900" />

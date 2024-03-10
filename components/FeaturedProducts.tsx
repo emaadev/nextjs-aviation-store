@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Product from "./product/Product";
+import Product from "./product/FeaturedProduct";
 
 interface FeaturedProductsProps {
   products: any;
@@ -17,7 +17,7 @@ const FeaturedProducts = ({ products }: FeaturedProductsProps) => {
 
       <div className="flex justify-center items-center gap-4">
         {products.map((product: any, index: any) => (
-          <div key={index}>
+          <div key={index} className="hover:shadow-lg transition-all">
             <Product product={product} />
           </div>
         ))}
