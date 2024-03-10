@@ -13,7 +13,7 @@ export const allProducts = [
     isFeatured: true,
     stock: 0,
     colors: ["bg-blue-600", "bg-gray-900", "bg-gray-400"],
-    image: iPhone15ProImg,
+    images: [iPhone15ProImg],
   },
   {
     id: "hdudhuwiqdu12bdu21bdu",
@@ -25,7 +25,7 @@ export const allProducts = [
     isFeatured: true,
     stock: 10,
     colors: ["bg-blue-600", "bg-gray-900", "bg-gray-400"],
-    image: iPhone15ProMaxImg,
+    images: [iPhone15ProMaxImg],
   },
   {
     id: "dqwbuidbwuiqdiqwbdqw",
@@ -37,7 +37,7 @@ export const allProducts = [
     isFeatured: true,
     stock: 10,
     colors: ["bg-blue-600", "bg-gray-900", "bg-gray-400"],
-    image: appleWatchUltra,
+    images: [appleWatchUltra, iPhone15ProMaxImg, iPhone15ProMaxImg],
   },
   {
     id: "dhwuqbdu21bud1b2ud81",
@@ -49,7 +49,7 @@ export const allProducts = [
     isFeatured: false,
     stock: 10,
     colors: ["bg-blue-600", "bg-gray-900", "bg-gray-400"],
-    image: appleWatchUltra,
+    images: [appleWatchUltra],
   },
   {
     id: "dqwudbuiwdbuwqbduqdu1",
@@ -61,6 +61,6 @@ export const allProducts = [
     isFeatured: false,
     stock: 10,
     colors: ["bg-blue-600", "bg-gray-900", "bg-gray-400"],
-    image: appleWatchUltra,
+    images: [appleWatchUltra],
   },
 ];

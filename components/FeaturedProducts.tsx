@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Product from "./shared/Product";
+import Product from "./product/Product";
 
 interface FeaturedProductsProps {
   products: any;

@@ -1,16 +1,28 @@
+"use client";
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 interface ProductProps {
   product: any;
 }
 
 const Product = ({ product }: ProductProps) => {
-  const { stock, image, name, category, price, colors } = product;
+  const router = useRouter();
+
+  const { id, stock, images, name, category, price, colors } = product;
 
   const isOutOfStock = stock === 0;
 
+  const handleClick = () => {
+    router.push(`/products/product/${id}`);
+  };
+
   return (
-    <div className="flex justify-center items-center bg-white rounded-xl shadow-lg gap-10">
+    <div
+      onClick={handleClick}
+      className="flex justify-center items-center bg-white rounded-xl shadow-lg gap-10 cursor-pointer"
+    >
       <div className="relative w-[350px] h-[450px] flex flex-col justify-center items-start p-[20px]">
         {isOutOfStock && (
           <div className="absolute top-4 right-4 px-6 py-1 shadow-lg rounded-lg bg-red-600 text-white text-sm text-center font-semibold">
@@ -19,7 +31,11 @@ const Product = ({ product }: ProductProps) => {
         )}
 
         <div className="m-auto w-full bg-white object-contain mb-4 rounded-xl">
-          <Image src={image} className="object-cover" alt="iPhone 15 Pro Img" />
+          <Image
+            src={images[0]}
+            className="object-cover"
+            alt="iPhone 15 Pro Img"
+          />
         </div>
 
         <div className="flex flex-col items-start justify-center">
@@ -42,7 +58,10 @@ const Product = ({ product }: ProductProps) => {
 
         <div className="flex justify-start items-center gap-2">
           {colors.map((color: any, index: any) => (
-            <div key={index} className={`w-8 h-8 rounded-full ${color}`} />
+            <div
+              key={index}
+              className={`w-8 h-8 rounded-full border-[1px] border-gray-300 ${color}`}
+            />
           ))}
         </div>
       </div>

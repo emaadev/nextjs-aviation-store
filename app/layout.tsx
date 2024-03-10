@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-// const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "ISEAP Official Store",
-  description: "Buy the best Aviation's Items here",
+  title: "ISEAP | Tienda Oficial",
+  description: "Los Mejores Artículos Aeronáuticos",
 };
 
 export default function RootLayout({
@@ -18,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body>
         <Navbar />
         {children}
