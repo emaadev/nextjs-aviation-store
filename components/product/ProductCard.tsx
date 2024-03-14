@@ -7,29 +7,23 @@ import Button from "@/components/ui/Button";
 
 import { LuExpand } from "react-icons/lu";
 import { MdAddShoppingCart } from "react-icons/md";
+import { useCart } from "@/context/CartContext";
 
 interface ProductCardProps {
   product: any;
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
+  const { state, dispatch } = useCart();
   const router = useRouter();
 
   const handleClick = () => {
     router.push(`/products/product/${product?.id}`);
   };
 
-  //   const onPreview: MouseEventHandler<HTMLButtonElement> = (event) => {
-  //     event.stopPropagation();
-
-  //     previewModal.onOpen(product);
-  //   };
-
-  //   const onAddToCart: MouseEventHandler<HTMLButtonElement> = (event) => {
-  //     event.stopPropagation();
-
-  //     cart.addItem(product);
-  //   };
+  const addItemToCart = (item: any) => {
+    dispatch({ type: "ADD_ITEM", payload: item });
+  };
 
   return (
     <article
@@ -54,7 +48,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
               <LuExpand className="w-6 h-6 text-gray-900" />
             </Button>
 
-            <Button className="bg-white">
+            <Button
+              className="bg-white"
+              onClick={() => addItemToCart({ id: product.id })}
+            >
               <MdAddShoppingCart className="w-6 h-6 text-gray-900" />
             </Button>
           </div>

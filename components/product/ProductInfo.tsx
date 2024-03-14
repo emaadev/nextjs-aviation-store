@@ -1,8 +1,9 @@
 "use client";
 
 import Button from "@/components/ui/Button";
-import { MdAddShoppingCart } from "react-icons/md";
+import { useCart } from "@/context/CartContext";
 
+import { MdAddShoppingCart } from "react-icons/md";
 import { RiErrorWarningLine } from "react-icons/ri";
 
 interface ProductInfoProps {
@@ -10,12 +11,13 @@ interface ProductInfoProps {
 }
 
 const ProductInfo = ({ product }: ProductInfoProps) => {
-  // Add to Cart Functionality
-  //   const onAddToCart: MouseEventHandler<HTMLButtonElement> = (event) => {
-  //     event.stopPropagation();
+  const { state, dispatch } = useCart();
 
-  //     cart.addItem(data);
-  //   };
+  console.log(state);
+
+  const addItem = (item: any) => {
+    dispatch({ type: "ADD_ITEM", payload: item });
+  };
 
   return (
     <article>
@@ -34,18 +36,19 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
         </p>
       </section>
 
-      {/* "Out of stock" alert text */}
-      <section className="flex justify-start items-center gap-2 mt-4">
-        <RiErrorWarningLine className="w-6 h-6 text-red-700" />
-        <span className="text-red-700">
-          This product could be out of stock. Please contact us before you buy
-          it.
-        </span>
-      </section>
+      {product.stock === 0 && (
+        <section className="flex justify-start items-center gap-2 mt-4">
+          <RiErrorWarningLine className="w-6 h-6 text-red-700" />
+          <span className="text-red-700">
+            This product could be out of stock. Please contact us before you buy
+            it.
+          </span>
+        </section>
+      )}
 
       <hr className="my-4" />
 
-      <section className="flex flex-col gap-y-6">
+      <section className="flex flex-col gap-y-4">
         <div className="flex items-center gap-x-4">
           <h4 className="font-semibold text-black">Category: </h4>
           <span>{product.category}</span>
@@ -64,9 +67,27 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
           </div>
         </div>
 
+        <div className="flex items-center gap-x-4">
+          <h4 className="font-semibold text-black">Stock:</h4>
+
+          <span
+            className={`font-semibold ${
+              product.stock === 0 ? "text-red-600" : "text-blue-600"
+            }`}
+          >
+            {product.stock} product/s in stock
+          </span>
+        </div>
+
         <div className="mt-10 flex items-center gap-x-3">
           {/* Add Functionality */}
-          <Button className="bg-gray-900 text-white">
+          <Button
+            className={`bg-gray-900 text-white ${
+              product.stock === 0 && "opacity-25"
+            }`}
+            onClick={() => addItem({ id: product.id })}
+            disabled={product.stock === 0}
+          >
             <MdAddShoppingCart className="w-5 h-5" />
             Añadir al Carrito
           </Button>

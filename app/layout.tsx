@@ -1,13 +1,11 @@
-import type { Metadata } from "next";
-import "./globals.css";
+"use client";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
-  title: "ISEAP | Tienda Oficial",
-  description: "Los Mejores Artículos Aeronáuticos",
-};
+import { CartProvider } from "@/context/CartContext";
+
+import "./globals.css";
 
 export default function RootLayout({
   children,
@@ -17,9 +15,11 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
-        <Navbar />
-        {children}
-        <Footer />
+        <CartProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );

@@ -16,7 +16,7 @@ export const allProducts = [
     images: [iPhone15ProImg],
   },
   {
-    id: "hdudhuwiqdu12bdu21bdu",
+    id: "hdudhuwiqdu12bdu21b2121221",
     name: "Smartphone",
     description:
       "Sleek and modern smartphone with a large screen, long-lasting battery, and high-quality camera.",
@@ -34,7 +34,7 @@ export const allProducts = [
       "Sleek and modern smartphone with a large screen, long-lasting battery, and high-quality camera.",
     category: "iPhone",
     price: 699.99,
-    isFeatured: true,
+    isFeatured: false,
     stock: 10,
     colors: ["bg-blue-600", "bg-gray-900", "bg-gray-400"],
     images: [iPhone15ProMaxImg],
