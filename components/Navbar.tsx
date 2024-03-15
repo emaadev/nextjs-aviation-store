@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="relative flex items-center justify-center gap-2 cursor-pointer">
           <Link
             href="/products"
-            className="text-md font-medium"
+            className="text-md font-medium text-gray-500 hover:text-gray-800 transition-all"
             onClick={() => setNavbar(false)}
           >
             Todos los Productos
@@ -68,8 +68,10 @@ const Navbar = () => {
           }
           className="relative group flex items-center justify-center gap-2 cursor-pointer"
         >
-          <span className="text-md font-medium">Categorías</span>
-          <IoIosArrowDown className="w-4 h-4" />
+          <span className="text-md font-medium text-gray-500 hover:text-gray-800 transition-all">
+            Categorías
+          </span>
+          <IoIosArrowDown className="w-4 h-4 text-gray-500 hover:text-gray-800 transition-all" />
           <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-full mt-2 w-[300px] right-0 p-2 bg-gray-100 rounded-lg shadow-xl z-50">
             <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-4">
               <li

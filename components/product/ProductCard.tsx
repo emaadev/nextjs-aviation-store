@@ -32,7 +32,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
       onClick={handleClick}
       className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4"
     >
-      <header className="aspect-square rounded-xl bg-gray-100 relative">
+      <header className="aspect-square rounded-xl relative">
         <Image
           src={product?.images?.[0]}
           fill
@@ -42,7 +42,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         />
 
         {/* TODO: Preview Mode */}
-        <div className="absolute bottom-0 w-full h-20 bg-gradient-to-t from-gray-800 opacity-0 group-hover:opacity-100 rounded-b-xl transition" />
+        <div className="absolute bottom-0 w-full h-20 bg-gradient-to-t from-gray-500 opacity-0 group-hover:opacity-100 rounded-b-xl transition" />
 
         <div className="opacity-0 group-hover:opacity-100 transition-all absolute w-full px-6 bottom-5 ">
           <div className="flex gap-x-6 justify-center">

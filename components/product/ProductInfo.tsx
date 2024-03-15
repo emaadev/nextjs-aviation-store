@@ -29,11 +29,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
       </section>
 
       <section className="flex flex-col mt-4">
-        <p className="text-lg font-light">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
-          reiciendis quod unde illum molestiae blanditiis libero ducimus
-          incidunt, error enim ab, id esse exercitationem!
-        </p>
+        <p className="text-lg font-light">{product.description}</p>
       </section>
 
       {product.stock === 0 && (
@@ -58,10 +54,11 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
           <h4 className="font-semibold text-black">Color/es: </h4>
 
           <div className="flex gap-1">
-            {product.colors.map((color: string[], index: any) => (
+            {product.colors.map((color: any, index: any) => (
               <span
                 key={index}
-                className={`h-6 w-6 rounded-full border ${color}`}
+                className={`h-6 w-6 rounded-full border`}
+                style={{ backgroundColor: color }}
               />
             ))}
           </div>

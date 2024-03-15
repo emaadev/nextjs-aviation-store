@@ -1,78 +1,128 @@
-import iPhone15ProImg from "@/public/apple-iphone-15-pro-1tb-blue-titanium.png";
-import iPhone15ProMaxImg from "@/public/apple-iphone-15-pro-max-256gb-natural-titanium.png";
-import appleWatchUltra from "@/public/apple-watch-ultra-2.png";
+import lapicera from "@/public/products/lapicera.jpeg";
+import libreta from "@/public/products/libreta.jpeg";
+import llaveroBoeing from "@/public/products/llavero-boeing.jpeg";
+import llaveroBoeing2 from "@/public/products/llavero-boeing-2.jpeg";
+import llaveroPiloto from "@/public/products/llavero-piloto.jpeg";
+import llaveroTripulacion from "@/public/products/llavero-tripulacion.jpeg";
+import maquetaAvion from "@/public/products/maqueta-avion.jpeg";
+import portaCredencial from "@/public/products/porta-credencial.jpeg";
+import tarjetero from "@/public/products/tarjetero.jpeg";
+import tarjetero2 from "@/public/products/tarjetero-2.jpeg";
+import vasoTermico from "@/public/products/vaso-termico.jpeg";
 
 export const allProducts = [
   {
     id: "hdh328dhqwiond3nd13",
-    name: "Laptop",
-    description:
-      "15-inch laptop with high-resolution display and powerful performance for professionals.",
-    category: "Laptop",
-    price: 999.99,
+    name: "Lapicera ISEAP",
+    description: "Lapicera con sellado de ISEAP",
+    category: "Accesorios",
+    price: 1499,
     isFeatured: true,
     stock: 1,
-    colors: ["bg-blue-600", "bg-gray-900", "bg-gray-400"],
-    images: [iPhone15ProImg],
+    colors: ["#1F3B77", "#000"],
+    images: [lapicera],
   },
   {
-    id: "hdudhuwiqdu12bdu21b2121221",
-    name: "Smartphone",
-    description:
-      "Sleek and modern smartphone with a large screen, long-lasting battery, and high-quality camera.",
-    category: "iPhone",
-    price: 699.99,
+    id: "libr328dhqwiond3nd14",
+    name: "Libreta de Vuelo",
+    description: "Modelo eco-cuero. Excelente terminación y calidad",
+    category: "Libretas",
+    price: 44999,
     isFeatured: true,
     stock: 1,
-    colors: ["bg-blue-600", "bg-gray-900", "bg-gray-400"],
-    images: [iPhone15ProMaxImg],
+    colors: ["#AC9B7C", "#343a40"],
+    images: [libreta],
   },
   {
-    id: "hdudhuwiqdu12bdu21bdu",
-    name: "Smartphone",
-    description:
-      "Sleek and modern smartphone with a large screen, long-lasting battery, and high-quality camera.",
-    category: "iPhone",
-    price: 699.99,
+    id: "llbv328dhqwiond3nd15",
+    name: "Llavero Bordado de Excelente Calidad",
+    description: "Llavero metálico Boeing",
+    category: "Llaveros",
+    price: 6500,
     isFeatured: false,
     stock: 1,
-    colors: ["bg-blue-600", "bg-gray-900", "bg-gray-400"],
-    images: [iPhone15ProMaxImg],
+    colors: ["#c0c0c0", "#007bff"],
+    images: [llaveroBoeing],
   },
   {
-    id: "dqwbuidbwuiqdiqwbdqw",
-    name: "Tablet",
+    id: "llbv2328dhqwiond3nd16",
+    name: "Lanyard Boeing - Modelo Reflectivo",
+    description: "Llavero Original de Boeing. Resistente de alta calidad.",
+    category: "Llaveros",
+    price: 25000,
+    isFeatured: false,
+    stock: 1,
+    colors: ["#888888", "#343a40", "#EAEF27"],
+    images: [llaveroBoeing2],
+  },
+  {
+    id: "llvp328dhqwiond3nd17",
+    name: "Llavero Pilot",
     description:
-      "Portable tablet with a vivid display, perfect for browsing, reading, and entertainment on the go.",
-    category: "Technology",
-    price: 499.99,
+      "Llavero con insignia de piloto de avión, de excelente calidad",
+    category: "Llaveros",
+    price: 6500,
+    isFeatured: false,
+    stock: 1,
+    colors: ["#ffd700", "#343a40", "#fff"],
+    images: [llaveroPiloto],
+  },
+  {
+    id: "llvt328dhqwiond3nd18",
+    name: "Llavero Crew - TCP",
+    description: "Llavero con emblema de Tripulación de Vuelo",
+    category: "Llaveros",
+    price: 6500,
+    isFeatured: false,
+    stock: 1,
+    colors: ["#BC210F", "#fff"],
+    images: [llaveroTripulacion],
+  },
+  {
+    id: "maqv328dhqwiond3nd19",
+    name: "Maqueta Airbus A380-800",
+    description:
+      "Maqueta de Avión modelo ISEAP. Excelente terminación y calidad.",
+    category: "Maquetas de Avión",
+    price: 74999,
     isFeatured: true,
     stock: 1,
-    colors: ["bg-blue-600", "bg-gray-900", "bg-gray-400"],
-    images: [appleWatchUltra, iPhone15ProMaxImg, iPhone15ProMaxImg],
+    colors: ["#ffffff", "#1F3B77"],
+    images: [maquetaAvion],
   },
   {
-    id: "dhwuqbdu21bud1b2ud81",
-    name: "Smartwatch",
+    id: "port328dhqwiond3nd20",
+    name: "Lanyard Boeing",
     description:
-      "Stylish smartwatch with fitness tracking, notifications, and customizable watch faces.",
-    category: "Technology",
-    price: 299.99,
+      "Material Original de Boeing. Resistente y delicado. Correa extensible.",
+    category: "Accesorios",
+    price: 29900,
     isFeatured: false,
     stock: 1,
-    colors: ["bg-blue-600", "bg-gray-900", "bg-gray-400"],
-    images: [appleWatchUltra],
+    colors: ["#1F3B77", "#A0A6B3", "#fff"],
+    images: [portaCredencial],
   },
   {
-    id: "dqwudbuiwdbuwqbduqdu1",
-    name: "Wireless Headphones",
-    description:
-      "Comfortable wireless headphones with noise cancellation and high-quality sound.",
-    category: "Headphones",
-    price: 199.99,
+    id: "tarj328dhqwiond3nd21",
+    name: "Porta Credencial y Tarjetero",
+    description: "Material Original de Boeing. Resistente y delicado.",
+    category: "Accesorios",
+    price: 1999,
     isFeatured: false,
     stock: 1,
-    colors: ["bg-blue-600", "bg-gray-900", "bg-gray-400"],
-    images: [appleWatchUltra],
+    colors: ["#000000", "#343a40"],
+    images: [tarjetero, tarjetero2],
+  },
+  {
+    id: "vasot328dhqwiond3nd23",
+    name: "Vaso Térmico ISEAP",
+    description:
+      "Vaso térmico con logo de ISEAP. Ideal para bebidas calientes.",
+    category: "Accesorios",
+    price: 22000,
+    isFeatured: false,
+    stock: 1,
+    colors: ["#c0c0c0", "#1F3B77", "#000"],
+    images: [vasoTermico],
   },
 ];

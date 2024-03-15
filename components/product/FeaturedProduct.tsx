@@ -70,7 +70,7 @@ const FeaturedProduct = ({ product }: FeaturedProduct) => {
               stock === 0 ? "text-red-600" : "text-blue-600"
             }`}
           >
-            {stock} product/s in stock
+            {stock} producto/s en stock
           </span>
         </div>
 
@@ -78,7 +78,8 @@ const FeaturedProduct = ({ product }: FeaturedProduct) => {
           {colors.map((color: any, index: any) => (
             <div
               key={index}
-              className={`w-8 h-8 rounded-full border-[1px] border-gray-300 ${color}`}
+              className={`w-8 h-8 rounded-full border-[1px] border-gray-300`}
+              style={{ backgroundColor: color }}
             />
           ))}
         </div>
