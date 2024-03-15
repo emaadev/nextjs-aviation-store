@@ -6,6 +6,7 @@ import { useCart } from "@/context/CartContext";
 import Button from "@/components/ui/Button";
 
 import { allProducts } from "@/constants/data";
+import WhatsAppCheckout from "./WhatsAppCheckout";
 
 const OrderSummary = () => {
   const { state, dispatch } = useCart();
@@ -39,19 +40,11 @@ const OrderSummary = () => {
       </div>
 
       <div className="flex flex-col mt-6 gap-4">
-        <Button
+        <WhatsAppCheckout
+          products={cartProducts}
           disabled={state.items.length === 0}
-          onClick={() =>
-            toast.error(
-              "Estamos desarrollando esta sección. Por favor intente más tarde."
-            )
-          }
-          className={`w-full bg-gray-900 text-white ${
-            state.items.length === 0 && "opacity-40"
-          }`}
-        >
-          Go to Checkout
-        </Button>
+          subtotal={totalCost}
+        />
 
         <Button
           disabled={state.items.length === 0}
