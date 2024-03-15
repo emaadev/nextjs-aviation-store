@@ -3,8 +3,10 @@
 import Image from "next/image";
 import { useCart } from "@/context/CartContext";
 
-import Button from "../ui/Button";
+import Button from "@/components/ui/Button";
 import { RxCross2 } from "react-icons/rx";
+
+import toast from "react-hot-toast";
 
 export interface CartItemProps {
   product: any;
@@ -12,10 +14,10 @@ export interface CartItemProps {
 
 const CartItem = ({ product }: CartItemProps) => {
   const { state, dispatch } = useCart();
-  console.log(product);
 
   const removeItem = (item: any) => {
     dispatch({ type: "REMOVE_ITEM", payload: item });
+    toast.success("Producto eliminado del carrito!");
   };
 
   return (

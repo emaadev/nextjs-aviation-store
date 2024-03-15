@@ -3,37 +3,38 @@ import Accordion from "./ui/Accordion";
 
 const FAQ = () => {
   return (
-    <section className="mx-auto relative w-[80%] flex flex-col justify-center items-center mb-[50px]">
+    <section className="mx-auto relative w-[80%] lg:w-[60%] flex flex-col justify-center items-center mb-[50px]">
       <div className="w-full bg-gray-200 h-[2px] mb-[40px]" />
 
       <article className="flex flex-col justify-center items-start">
         <div className="text-left mb-[10px]">
-          <h2 className="font-bold text-3xl">FAQ Section</h2>
+          <h2 className="font-bold text-3xl">Preguntas Frecuentes</h2>
           <p>
-            Get answers to common questions about our store, products, and
-            services for a seamless shopping experience.
+            Obtenga respuestas a las preguntas más habituales sobre nuestra
+            tienda, productos y servicios para disfrutar de una experiencia de
+            compra perfecta.
           </p>
         </div>
 
         <div className="mx-auto w-full">
           <Accordion
-            title="How do I track my order?"
-            content="Tracking your order is easy and convenient. Simply log in to your account, go to your order history, and select the order you wish to track. You'll find detailed information about the status of your shipment, including estimated delivery dates and any tracking numbers provided by the courier. If you have any questions or concerns about your order's progress, our customer service team is always here to help."
+            title="¿Cómo puedo rastrear mi pedido?"
+            content="Rastrear tu pedido es fácil y conveniente. Simplemente inicia sesión en tu cuenta, ve a tu historial de pedidos y selecciona el pedido que deseas rastrear. Encontrarás información detallada sobre el estado de tu envío, incluyendo las fechas estimadas de entrega y cualquier número de seguimiento proporcionado por el mensajero. Si tienes alguna pregunta o inquietud sobre el progreso de tu pedido, nuestro equipo de atención al cliente siempre está aquí para ayudarte."
           />
 
           <Accordion
-            title="What is your return policy?"
-            content="Our return policy is designed to ensure your satisfaction with every purchase. If you're not completely happy with an item, you can return it within 30 days of receipt for a full refund or exchange. The product must be in its original condition, with all tags attached and packaging intact. Certain items, such as personalized products or perishable goods, may be subject to specific return restrictions. For a smooth return process, please follow the instructions provided on our website or contact our customer support for assistance."
+            title="¿Cuál es su política de devolución?"
+            content="Nuestra política de devolución está diseñada para garantizar tu satisfacción con cada compra. Si no estás completamente feliz con un artículo, puedes devolverlo dentro de los 30 días siguientes a la recepción para obtener un reembolso completo o un cambio. El producto debe estar en su estado original, con todas las etiquetas adjuntas y el embalaje intacto. Algunos artículos, como productos personalizados o bienes perecederos, pueden estar sujetos a restricciones específicas de devolución. Para un proceso de devolución sin problemas, por favor sigue las instrucciones proporcionadas en nuestro sitio web o contacta a nuestro soporte al cliente para obtener asistencia."
           />
 
           <Accordion
-            title="Can I get a discount?"
-            content="We offer various discounts and promotions throughout the year to provide our customers with the best value possible. You can stay updated on our latest deals by subscribing to our newsletter, following us on social media, or checking our website regularly. Additionally, we offer special discounts for first-time buyers, bulk purchases, and during special events like Black Friday or Cyber Monday. If you're eligible for a discount, you can apply the promo code at checkout to enjoy the savings."
+            title="¿Puedo obtener un descuento?"
+            content="Ofrecemos varios descuentos y promociones a lo largo del año para proporcionar a nuestros clientes el mejor valor posible. Puedes mantenerte actualizado sobre nuestras últimas ofertas suscribiéndote a nuestro boletín de noticias, siguiéndonos en las redes sociales o consultando nuestro sitio web regularmente. Además, ofrecemos descuentos especiales para compradores por primera vez, compras al por mayor y durante eventos especiales como el Black Friday o el Cyber Monday. Si eres elegible para un descuento, puedes aplicar el código promocional en el momento del pago para disfrutar de los ahorros."
           />
 
           <Accordion
-            title="Can I get a discount?"
-            content="Yes, we are pleased to offer international shipping to many countries around the world. Shipping rates and delivery times vary depending on the destination and the weight of your order. You can find detailed information about international shipping options and costs at checkout or on our shipping information page. Please note that international orders may be subject to customs fees and import taxes, which are the responsibility of the recipient."
+            title="¿Ofrecen envíos internacionales?"
+            content="Sí, nos complace ofrecer envíos internacionales a muchos países alrededor del mundo. Las tarifas de envío y los tiempos de entrega varían según el destino y el peso de tu pedido. Puedes encontrar información detallada sobre las opciones y costos de envío internacional en el momento del pago o en nuestra página de información de envío. Ten en cuenta que los pedidos internacionales pueden estar sujetos a tarifas aduaneras e impuestos de importación, los cuales son responsabilidad del destinatario."
           />
         </div>
       </article>

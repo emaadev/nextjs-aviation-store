@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 import adidas from "@/public/adidas.jpg";
@@ -33,11 +35,13 @@ const TrustedBrandsImages = [
 
 const TrustedBrands = () => {
   return (
-    <div className="relative m-auto bg-white w-[70%] h-60 flex flex-col justify-center items-center overflow-hidden">
-      <h2 className="font-bold text-[35px]">Trusted Brands</h2>
+    <div className="relative m-auto bg-white w-[90%] lg:w-[70%] h-60 flex flex-col justify-center items-center overflow-hidden">
+      <h2 className="font-bold text-[25px] lg:text-[35px]">
+        Nuestros Partners
+      </h2>
 
-      <div className="absolute top-0 left-0 w-[200px] h-full bg-gradient-to-r from-white to-transparent z-10" />
-      <div className="absolute top-0 right-0 w-[200px] h-full bg-gradient-to-r from-transparent to-white z-10" />
+      <div className="absolute top-0 left-0 w-[50px] lg:w-[200px] h-full bg-gradient-to-r from-white to-transparent z-10" />
+      <div className="absolute top-0 right-0 w-[50px] lg:w-[200px] h-full bg-gradient-to-r from-transparent to-white z-10" />
 
       <div className={styles.scroller}>
         {TrustedBrandsImages.map((item, index) => (

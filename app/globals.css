@@ -8,3 +8,10 @@ html,
 body {
     font-family: "Montserrat", sans-serif;
 }
+.category-divider-1 {
+    @apply absolute w-[200px] h-[200px] lg:w-[600px] lg:h-[600px] bg-[#0047CC] -bottom-40 left-40 rounded-full blur-2xl opacity-10 -z-[1]
+}
+
+.category-divider-2 {
+    @apply absolute w-[200px] h-[200px] lg:w-[600px] lg:h-[600px] bg-[#3F00CC] -bottom-40 right-40 rounded-full blur-2xl opacity-10 -z-[1]
+}

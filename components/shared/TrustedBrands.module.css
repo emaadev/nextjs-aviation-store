@@ -7,17 +7,6 @@
     gap: 100px;
 }
 
-/* .linearGradient {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: linear-gradient(transparent, red);
-    height: 100%;
-    width: 250px;
-    content: "";
-    z-index: 2;
-} */
-
 @keyframes scroll {
     0% {
         transform: translateX(0);

@@ -48,6 +48,7 @@ const cartReducer = (state: any, action: any) => {
       };
     case "REMOVE_ALL_ITEMS":
       return {
+        ...state,
         items: [],
       };
     default:

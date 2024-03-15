@@ -18,7 +18,7 @@ const ProductPage = ({ params }: ProductPageProps) => {
 
   return (
     <main className="bg-white">
-      <section className="mx-auto py-[100px] px-[50px]">
+      <section className="mx-auto py-[100px] px-[10px] lg:px-[50px]">
         <div className="px-4 py-10 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
             <Gallery images={product?.images} />
@@ -30,7 +30,10 @@ const ProductPage = ({ params }: ProductPageProps) => {
 
           <hr className="my-10" />
 
-          <ProductsList title="Related Items" products={suggestedProducts} />
+          <ProductsList
+            title="Productos Relacionados"
+            products={suggestedProducts}
+          />
         </div>
       </section>
     </main>

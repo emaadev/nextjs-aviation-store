@@ -2,6 +2,7 @@
 
 import Button from "@/components/ui/Button";
 import { useCart } from "@/context/CartContext";
+import toast from "react-hot-toast";
 
 import { MdAddShoppingCart } from "react-icons/md";
 import { RiErrorWarningLine } from "react-icons/ri";
@@ -13,10 +14,9 @@ interface ProductInfoProps {
 const ProductInfo = ({ product }: ProductInfoProps) => {
   const { state, dispatch } = useCart();
 
-  console.log(state);
-
   const addItem = (item: any) => {
     dispatch({ type: "ADD_ITEM", payload: item });
+    toast.success("Producto añadido al carrito!");
   };
 
   return (
@@ -38,10 +38,10 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
 
       {product.stock === 0 && (
         <section className="flex justify-start items-center gap-2 mt-4">
-          <RiErrorWarningLine className="w-6 h-6 text-red-700" />
+          <RiErrorWarningLine className="w-10 h-10 text-red-700" />
           <span className="text-red-700">
-            This product could be out of stock. Please contact us before you buy
-            it.
+            Este producto podría estar agotado. Póngase en contacto con nosotros
+            antes de comprarlo.
           </span>
         </section>
       )}
@@ -50,12 +50,12 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
 
       <section className="flex flex-col gap-y-4">
         <div className="flex items-center gap-x-4">
-          <h4 className="font-semibold text-black">Category: </h4>
+          <h4 className="font-semibold text-black">Categoría: </h4>
           <span>{product.category}</span>
         </div>
 
         <div className="flex items-center gap-x-4">
-          <h4 className="font-semibold text-black">Color/s: </h4>
+          <h4 className="font-semibold text-black">Color/es: </h4>
 
           <div className="flex gap-1">
             {product.colors.map((color: string[], index: any) => (
@@ -75,7 +75,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
               product.stock === 0 ? "text-red-600" : "text-blue-600"
             }`}
           >
-            {product.stock} product/s in stock
+            {product.stock} productos en stock
           </span>
         </div>
 

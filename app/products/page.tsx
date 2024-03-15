@@ -55,7 +55,7 @@ const AllProductsPage = () => {
             <MdManageSearch className="text-gray-600 w-7 h-7" />
             <input
               type="text"
-              placeholder="Search here..."
+              placeholder="Escribe algo aquí..."
               className="bg-transparent w-full h-full text-gray-600 placeholder:text-gray-400 font-medium"
             />
           </div>
@@ -67,7 +67,7 @@ const AllProductsPage = () => {
           <div className="lg:grid lg:grid-cols-5 lg:gap-x-5">
             <div className="hidden lg:block">
               <Filter
-                name="Categories"
+                name="Categorías"
                 filters={categories}
                 onFilter={handleFilter}
                 activeCategory={activeCategory}

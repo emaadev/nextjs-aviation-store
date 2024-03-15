@@ -8,6 +8,7 @@ import Button from "@/components/ui/Button";
 import { LuExpand } from "react-icons/lu";
 import { MdAddShoppingCart } from "react-icons/md";
 import { useCart } from "@/context/CartContext";
+import toast from "react-hot-toast";
 
 interface ProductCardProps {
   product: any;
@@ -23,6 +24,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
   const addItemToCart = (item: any) => {
     dispatch({ type: "ADD_ITEM", payload: item });
+    toast.success("Producto añadido al carrito!");
   };
 
   return (
@@ -70,7 +72,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             product.stock === 0 ? "text-red-600" : "text-blue-600"
           }`}
         >
-          {product.stock} product/s in stock
+          {product.stock} productos en stock
         </span>
       </footer>
     </article>

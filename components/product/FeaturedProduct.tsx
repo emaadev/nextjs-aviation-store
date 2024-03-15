@@ -28,8 +28,8 @@ const FeaturedProduct = ({ product }: FeaturedProduct) => {
     >
       <div className="relative w-[350px] h-[450px] flex flex-col justify-center items-start p-[20px]">
         {isOutOfStock && (
-          <div className="absolute top-4 right-4 px-6 py-1 shadow-lg rounded-lg bg-red-600 text-white text-sm text-center font-semibold z-[999]">
-            OUT OF STOCK
+          <div className="absolute top-4 right-4 px-6 py-1 shadow-lg rounded-lg bg-red-600 text-white text-sm text-center font-semibold z-[10]">
+            SIN STOCK
           </div>
         )}
 

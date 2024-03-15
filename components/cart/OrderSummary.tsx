@@ -1,8 +1,9 @@
 "use client";
 
+import toast from "react-hot-toast";
 import { useCart } from "@/context/CartContext";
 
-import Button from "../ui/Button";
+import Button from "@/components/ui/Button";
 
 import { allProducts } from "@/constants/data";
 
@@ -40,7 +41,11 @@ const OrderSummary = () => {
       <div className="flex flex-col mt-6 gap-4">
         <Button
           disabled={state.items.length === 0}
-          //   onClick={onCheckout}
+          onClick={() =>
+            toast.error(
+              "Estamos desarrollando esta sección. Por favor intente más tarde."
+            )
+          }
           className={`w-full bg-gray-900 text-white ${
             state.items.length === 0 && "opacity-40"
           }`}

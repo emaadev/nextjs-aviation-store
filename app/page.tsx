@@ -13,7 +13,7 @@ export default function Home() {
   );
 
   return (
-    <main className="relative">
+    <main className="relative w-full">
       <Hero />
       <TrustedBrands />
       <CategorySelector />

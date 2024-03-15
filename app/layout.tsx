@@ -3,6 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+import { Toaster } from "react-hot-toast";
 import { CartProvider } from "@/context/CartContext";
 
 import "./globals.css";
@@ -20,6 +21,8 @@ export default function RootLayout({
           {children}
           <Footer />
         </CartProvider>
+
+        <Toaster />
       </body>
     </html>
   );

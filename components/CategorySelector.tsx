@@ -1,39 +1,40 @@
-import Image from "next/image";
 import { MdAirplanemodeActive } from "react-icons/md";
 
-import categoryImage1 from "@/public/banner-1.jpg";
+import categoryImage1 from "@/public/plane-banner.jpg";
+import categoryImage2 from "@/public/plane-banner-2.jpg";
+import categoryImage3 from "@/public/plane-banner-3.jpg";
 import CategoryComponent from "./shared/CategorySection";
 
 const CategorySection = () => {
   return (
     <section className="m-auto relative flex justify-center items-center w-full h-full pb-[100px]">
       {/* Dividers */}
-      <div className="absolute w-[600px] h-[600px] bg-[#0047CC] -bottom-40 left-40 rounded-full blur-2xl opacity-10 -z-[1]" />
-      <div className="absolute w-[600px] h-[600px] bg-[#3F00CC] -bottom-40 right-40 rounded-full blur-2xl opacity-10 -z-[1]" />
+      <div className="category-divider-1" />
+      <div className="category-divider-2" />
 
-      <div className="flex justify-center items-center w-[90%]">
+      <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-center lg:items-center w-full lg:w-[90%]">
         <CategoryComponent
-          title={"Category"}
-          subtitle={"Find the best [category] products here."}
-          textLink={"View more →"}
-          href={"/"}
+          title={"Maquetas de Aviones"}
+          subtitle={"Excelente calidad de maquetas de aviones"}
+          textLink={"Ver más →"}
+          href={"/products"}
           image={categoryImage1}
         />
 
         <CategoryComponent
-          title={"Category"}
-          subtitle={"Find the best [category] products here."}
-          textLink={"View more →"}
-          href={"/"}
-          image={categoryImage1}
+          title={"Tazas Personalizadas"}
+          subtitle={"Encontrá las tazas que todo fanático debe tener"}
+          textLink={"Ver más →"}
+          href={"/products"}
+          image={categoryImage2}
         />
 
         <CategoryComponent
-          title={"Category"}
-          subtitle={"Find the best [category] products here."}
-          textLink={"View more →"}
-          href={"/"}
-          image={categoryImage1}
+          title={"Vestimenta Profesional"}
+          subtitle={"Vestimenta de excelente calidad"}
+          textLink={"Ver más →"}
+          href={"/products"}
+          image={categoryImage3}
         />
       </div>
 

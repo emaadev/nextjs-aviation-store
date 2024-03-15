@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -6,7 +8,7 @@ import { RiInstagramFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 w-full h-[400px] flex justify-around">
+    <footer className="bg-gray-900 w-full py-[50px] flex flex-col-reverse justify-center items-center lg:flex-row lg:justify-around">
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col justify-center items-center mb-4">
           <Image src="/logo.png" width="180" height="180" alt="ISEAP Logo" />
@@ -17,7 +19,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaFacebook className="w-8 h-8 text-white" />
+              <FaFacebook className="w-8 h-8 text-white hover:text-white/80 transition-all" />
             </a>
 
             <a
@@ -25,7 +27,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaSquareXTwitter className="w-8 h-8 text-white" />
+              <FaSquareXTwitter className="w-8 h-8 text-white hover:text-white/80 transition-all" />
             </a>
 
             <a
@@ -33,7 +35,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <RiInstagramFill className="w-8 h-8 text-white" />
+              <RiInstagramFill className="w-8 h-8 text-white hover:text-white/80 transition-all" />
             </a>
 
             <a
@@ -41,7 +43,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <IoLogoWhatsapp className="w-8 h-8 text-white" />
+              <IoLogoWhatsapp className="w-8 h-8 text-white hover:text-white/80 transition-all" />
             </a>
           </div>
         </div>
@@ -62,14 +64,20 @@ const Footer = () => {
         </small>
       </div>
 
-      <div className="flex items-center gap-16">
+      <div className="flex items-center gap-16 mb-10">
         <div>
-          <p className="text-white font-semibold mb-2">Category</p>
+          <p className="text-white font-semibold mb-2">Categorías</p>
 
           <ul className="flex flex-col gap-2">
-            <li className="text-white">Item</li>
-            <li className="text-white">Item</li>
-            <li className="text-white">Item</li>
+            <li className="text-white">
+              <Link href="/products">Todos los productos</Link>
+            </li>
+            {/* <li className="text-white">
+              <Link href="/products">Todos los productos</Link>
+            </li>
+            <li className="text-white">
+              <Link href="/products">Todos los productos</Link>
+            </li> */}
           </ul>
         </div>
       </div>
