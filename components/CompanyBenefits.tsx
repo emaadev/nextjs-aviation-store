@@ -9,6 +9,7 @@ import { BsSendCheckFill } from "react-icons/bs";
 import { RiSecurePaymentFill } from "react-icons/ri";
 import { BiSolidOffer } from "react-icons/bi";
 import { FaTruckFast } from "react-icons/fa6";
+import Link from "next/link";
 
 const CompanyBenefits = () => {
   return (
@@ -28,7 +29,13 @@ const CompanyBenefits = () => {
           aficionados como para pilotos profesionales.
         </p>
 
-        <Button className="bg-gray-300 text-gray-600">Más Info</Button>
+        <Link
+          href="https://iseap.com.ar"
+          target="_blank"
+          className="bg-gray-300 text-gray-600 flex justify-center items-center gap-2 py-2 px-4 rounded-md font-semibold hover:bg-opacity-80 transition"
+        >
+          Más Info
+        </Link>
       </aside>
 
       <article className="flex flex-row justify-center lg:items-center flex-wrap w-[80%] lg:w-[40%] gap-x-2 lg:gap-x-8 gap-y-20">

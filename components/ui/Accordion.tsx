@@ -3,10 +3,10 @@ import { useState } from "react";
 
 interface AccordionProps {
   title: string;
-  content: string;
+  children: React.ReactNode;
 }
 
-const Accordion = ({ title, content }: AccordionProps) => {
+const Accordion = ({ title, children }: AccordionProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
@@ -45,7 +45,7 @@ const Accordion = ({ title, content }: AccordionProps) => {
       <div
         className={`${isOpen ? "block" : "hidden"} transition-all p-5 bg-white`}
       >
-        <p className="text-gray-500">{content}</p>
+        {children}
       </div>
     </div>
   );

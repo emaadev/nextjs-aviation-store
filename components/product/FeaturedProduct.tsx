@@ -26,7 +26,7 @@ const FeaturedProduct = ({ product }: FeaturedProduct) => {
       onClick={handleClick}
       className="flex justify-center items-center bg-white rounded-xl shadow-lg gap-10 cursor-pointer"
     >
-      <div className="relative w-[350px] h-[450px] flex flex-col justify-center items-start p-[20px]">
+      <div className="relative w-[350px] flex flex-col justify-center items-start p-[20px]">
         {isOutOfStock && (
           <div className="absolute top-4 right-4 px-6 py-1 shadow-lg rounded-lg bg-red-600 text-white text-sm text-center font-semibold z-[10]">
             SIN STOCK
@@ -34,14 +34,18 @@ const FeaturedProduct = ({ product }: FeaturedProduct) => {
         )}
 
         <div className="relative group m-auto w-full bg-white object-contain mb-4 rounded-xl">
-          <Image
-            src={images[0]}
-            className="object-cover"
-            alt="iPhone 15 Pro Img"
-          />
+          <header className="aspect-square rounded-xl relative">
+            <Image
+              src={product?.images?.[0]}
+              fill
+              sizes="1000"
+              alt={product?.name}
+              className="object-contain w-full rounded-md"
+            />
+          </header>
 
           {/* TODO: Preview Mode */}
-          <div className="absolute bottom-0 w-full h-20 bg-gradient-to-t from-gray-800 opacity-0 group-hover:opacity-100 rounded-b-xl transition" />
+          <div className="absolute bottom-0 w-full h-20 bg-gradient-to-t from-gray-500 opacity-0 group-hover:opacity-100 rounded-b-xl transition" />
 
           <div className="opacity-0 group-hover:opacity-100 transition-all absolute w-full px-6 bottom-5 ">
             <div className="flex gap-x-6 justify-center">

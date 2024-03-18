@@ -41,6 +41,20 @@ import maniqui5 from "@/public/products/maniqui-5.jpeg";
 import maniqui6 from "@/public/products/maniqui-6.jpeg";
 import maniqui7 from "@/public/products/maniqui-7.jpeg";
 
+import raybanAviador1 from "@/public/products/rayban-aviador-1.jpeg";
+import raybanAviador2 from "@/public/products/rayban-aviador-2.jpeg";
+import raybanAviador3 from "@/public/products/rayban-aviador-3.jpeg";
+
+import raybanDama1 from "@/public/products/rayban-dama-1.jpeg";
+import raybanDama2 from "@/public/products/rayban-dama-2.jpeg";
+import raybanDama3 from "@/public/products/rayban-dama-3.jpeg";
+import raybanDama4 from "@/public/products/rayban-dama-4.jpeg";
+import raybanDama5 from "@/public/products/rayban-dama-5.jpeg";
+import raybanDama6 from "@/public/products/rayban-dama-6.jpeg";
+
+import raybanRedondo1 from "@/public/products/rayban-redondo-1.jpeg";
+import raybanRedondo2 from "@/public/products/rayban-redondo-2.jpeg";
+
 export const allProducts = [
   {
     id: "hdh328dhqwiond3nd13",
@@ -48,7 +62,7 @@ export const allProducts = [
     description: "Lapicera con sellado de ISEAP",
     category: "Accesorios",
     price: 1499,
-    isFeatured: true,
+    isFeatured: false,
     stock: 1,
     colors: ["#1F3B77", "#000"],
     images: [lapicera],
@@ -210,5 +224,45 @@ export const allProducts = [
       maniqui6,
       maniqui7,
     ],
+  },
+  {
+    id: "vasot328dhqwiond3nd27",
+    name: "Lentes RayBan Aviador",
+    description: "Lentes Originales RayBan Modelo Aviador",
+    category: "Lentes de Sol",
+    price: 150000,
+    isFeatured: true,
+    stock: 1,
+    colors: ["#000"],
+    images: [raybanAviador3, raybanAviador1, raybanAviador2],
+  },
+  {
+    id: "vasot328dhqwiond3nd28",
+    name: "Lentes RayBan Estilo Exclusive",
+    description: "Lentes Originales RayBan Modelo Exclusive",
+    category: "Lentes de Sol",
+    price: 150000,
+    isFeatured: false,
+    stock: 1,
+    colors: ["#000"],
+    images: [
+      raybanDama1,
+      raybanDama2,
+      raybanDama3,
+      raybanDama4,
+      raybanDama5,
+      raybanDama6,
+    ],
+  },
+  {
+    id: "vasot328dhqwiond3nd29",
+    name: "Lentes RayBan Redondos Exclusive",
+    description: "Lentes Originales RayBan Modelo Exclusive",
+    category: "Lentes de Sol",
+    price: 150000,
+    isFeatured: false,
+    stock: 1,
+    colors: ["#000"],
+    images: [raybanRedondo1, raybanRedondo2],
   },
 ];

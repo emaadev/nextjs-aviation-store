@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { IoMdArrowDropdown } from "react-icons/io";
 import Accordion from "./ui/Accordion";
 
@@ -17,25 +18,79 @@ const FAQ = () => {
         </div>
 
         <div className="mx-auto w-full">
-          <Accordion
-            title="¿Cómo puedo rastrear mi pedido?"
-            content="Rastrear tu pedido es fácil y conveniente. Simplemente inicia sesión en tu cuenta, ve a tu historial de pedidos y selecciona el pedido que deseas rastrear. Encontrarás información detallada sobre el estado de tu envío, incluyendo las fechas estimadas de entrega y cualquier número de seguimiento proporcionado por el mensajero. Si tienes alguna pregunta o inquietud sobre el progreso de tu pedido, nuestro equipo de atención al cliente siempre está aquí para ayudarte."
-          />
+          <Accordion title="¿Cómo puedo realizar una compra?">
+            <p className="text-gray-600">
+              Para realizar una compra en nuestra tienda, sigue estos sencillos
+              pasos:
+              <br />
+              <br />
+              1. Navega por nuestra tienda y elige los productos que deseas
+              comprar.
+              <br />
+              2. Añade los productos a tu carrito de compras haciendo clic en el
+              botón "Añadir al carrito".
+              <br />
+              3. Una vez que hayas seleccionado todos los productos que deseas,
+              ve a tu carrito de compras y revisa tu pedido.
+              <br />
+              4. Si estás satisfecho con tu selección, haz clic en el botón
+              "Checkout" o "Finalizar compra".
+              <br />
+              5. Se te redirigirá a una página de checkout donde deberás
+              ingresar tus datos de contacto y dirección de envío.
+              <br />
+              6. Elige tu método de pago preferido y confirma tu pedido.
+              <br />
+              7. Una vez que hayas completado el proceso de pago, recibirás una
+              confirmación de tu compra y un enlace para enviar tu pedido
+              directamente a nuestro WhatsApp.
+              <br />
+              8. Estaremos en contacto contigo para coordinar la entrega de tu
+              pedido.
+              <br />
+              <br />
+              Si tienes alguna pregunta o necesitas asistencia durante el
+              proceso de compra, no dudes en contactarnos. Estamos aquí para
+              ayudarte.
+            </p>
+          </Accordion>
 
-          <Accordion
-            title="¿Cuál es su política de devolución?"
-            content="Nuestra política de devolución está diseñada para garantizar tu satisfacción con cada compra. Si no estás completamente feliz con un artículo, puedes devolverlo dentro de los 30 días siguientes a la recepción para obtener un reembolso completo o un cambio. El producto debe estar en su estado original, con todas las etiquetas adjuntas y el embalaje intacto. Algunos artículos, como productos personalizados o bienes perecederos, pueden estar sujetos a restricciones específicas de devolución. Para un proceso de devolución sin problemas, por favor sigue las instrucciones proporcionadas en nuestro sitio web o contacta a nuestro soporte al cliente para obtener asistencia."
-          />
-
-          <Accordion
-            title="¿Puedo obtener un descuento?"
-            content="Ofrecemos varios descuentos y promociones a lo largo del año para proporcionar a nuestros clientes el mejor valor posible. Puedes mantenerte actualizado sobre nuestras últimas ofertas suscribiéndote a nuestro boletín de noticias, siguiéndonos en las redes sociales o consultando nuestro sitio web regularmente. Además, ofrecemos descuentos especiales para compradores por primera vez, compras al por mayor y durante eventos especiales como el Black Friday o el Cyber Monday. Si eres elegible para un descuento, puedes aplicar el código promocional en el momento del pago para disfrutar de los ahorros."
-          />
-
-          <Accordion
-            title="¿Ofrecen envíos internacionales?"
-            content="Sí, nos complace ofrecer envíos internacionales a muchos países alrededor del mundo. Las tarifas de envío y los tiempos de entrega varían según el destino y el peso de tu pedido. Puedes encontrar información detallada sobre las opciones y costos de envío internacional en el momento del pago o en nuestra página de información de envío. Ten en cuenta que los pedidos internacionales pueden estar sujetos a tarifas aduaneras e impuestos de importación, los cuales son responsabilidad del destinatario."
-          />
+          <Accordion title="Información de Envío">
+            <p className="text-gray-600">
+              En nuestra tienda, estamos comprometidos a brindarte la mejor
+              experiencia de compra, y eso incluye ofrecerte un servicio de
+              envío eficiente y confiable. A continuación, encontrarás
+              información importante sobre nuestros envíos:
+              <br />
+              <br />
+              1. <strong>Envíos a Todo el País:</strong> Realizamos envíos a
+              todas las provincias y ciudades del país. No importa dónde te
+              encuentres, puedes comprar nuestros productos y recibirlos en la
+              comodidad de tu hogar.
+              <br />
+              2. <strong>Tiempo de Entrega:</strong> El tiempo de entrega puede
+              variar dependiendo de tu ubicación. Una vez que realices tu
+              compra, te proporcionaremos una estimación del tiempo de entrega.
+              <br />
+              3. <strong>Costos de Envío:</strong> Los costos de envío se
+              calculan en función del peso del paquete y la distancia a
+              recorrer. Puedes consultar el costo exacto de envío antes de
+              finalizar tu compra.
+              <br />
+              4. <strong>Seguimiento de tu Pedido:</strong> Te proporcionaremos
+              un número de seguimiento para que puedas monitorear el estado de
+              tu envío en todo momento.
+              <br />
+              5. <strong>Empaque Seguro:</strong> Nos aseguramos de que todos
+              los productos sean empacados cuidadosamente para protegerlos
+              durante el transporte.
+              <br />
+              <br />
+              Si tienes alguna pregunta sobre los envíos o necesitas asistencia,
+              no dudes en contactarnos. Estamos aquí para ayudarte y asegurarnos
+              de que tu experiencia de compra sea satisfactoria.
+            </p>
+          </Accordion>
         </div>
       </article>
     </section>
