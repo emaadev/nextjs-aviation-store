@@ -1,14 +1,45 @@
 import lapicera from "@/public/products/lapicera.jpeg";
+
 import libreta from "@/public/products/libreta.jpeg";
+import libreta1 from "@/public/products/libreta-1.jpeg";
+import libreta2 from "@/public/products/libreta-2.jpeg";
+
 import llaveroBoeing from "@/public/products/llavero-boeing.jpeg";
 import llaveroBoeing2 from "@/public/products/llavero-boeing-2.jpeg";
 import llaveroPiloto from "@/public/products/llavero-piloto.jpeg";
 import llaveroTripulacion from "@/public/products/llavero-tripulacion.jpeg";
+
 import maquetaAvion from "@/public/products/maqueta-avion.jpeg";
+
+import maquetas1 from "@/public/products/maquetas-1.jpeg";
+import maquetas2 from "@/public/products/maquetas-2.jpeg";
+import maquetas3 from "@/public/products/maquetas-3.jpeg";
+
+import maquetaAerolineas from "@/public/products/maqueta-aerolineas.jpeg";
+
+import maquetaFlybondi from "@/public/products/maquetas-flybondi.jpeg";
+import maquetaFlybondi2 from "@/public/products/maquetas-flybondi-2.jpeg";
+
+import maquetaJetsmart from "@/public/products/maquetas-jetsmart.jpeg";
+import maquetaJetsmart2 from "@/public/products/maquetas-jetsmart-2.jpeg";
+import maquetaJetsmart3 from "@/public/products/maquetas-jetsmart-3.jpeg";
+
 import portaCredencial from "@/public/products/porta-credencial.jpeg";
+
 import tarjetero from "@/public/products/tarjetero.jpeg";
 import tarjetero2 from "@/public/products/tarjetero-2.jpeg";
+
 import vasoTermico from "@/public/products/vaso-termico.jpeg";
+import vasoTermico1 from "@/public/products/vaso-termico-1.jpeg";
+import vasoTermico2 from "@/public/products/vaso-termico-2.jpeg";
+
+import maniqui1 from "@/public/products/maniqui-1.jpeg";
+import maniqui2 from "@/public/products/maniqui-2.jpeg";
+import maniqui3 from "@/public/products/maniqui-3.jpeg";
+import maniqui4 from "@/public/products/maniqui-4.jpeg";
+import maniqui5 from "@/public/products/maniqui-5.jpeg";
+import maniqui6 from "@/public/products/maniqui-6.jpeg";
+import maniqui7 from "@/public/products/maniqui-7.jpeg";
 
 export const allProducts = [
   {
@@ -31,11 +62,11 @@ export const allProducts = [
     isFeatured: true,
     stock: 1,
     colors: ["#AC9B7C", "#343a40"],
-    images: [libreta],
+    images: [libreta, libreta1, libreta2],
   },
   {
     id: "llbv328dhqwiond3nd15",
-    name: "Llavero Bordado de Excelente Calidad",
+    name: "Llavero Bordado Boeing",
     description: "Llavero metálico Boeing",
     category: "Llaveros",
     price: 6500,
@@ -123,6 +154,61 @@ export const allProducts = [
     isFeatured: false,
     stock: 1,
     colors: ["#c0c0c0", "#1F3B77", "#000"],
-    images: [vasoTermico],
+    images: [vasoTermico, vasoTermico1, vasoTermico2],
+  },
+  {
+    id: "vasot328dhqwiond3nd24",
+    name: "Grupo de Maquetas",
+    description: "Grupo de Maquetas",
+    category: "Maquetas de Avión",
+    price: 150000,
+    isFeatured: false,
+    stock: 1,
+    colors: ["#c0c0c0", "#1F3B77", "#000"],
+    images: [maquetas1, maquetas2, maquetas3],
+  },
+  {
+    id: "vasot328dhqwiond3nd25",
+    name: "Maqueta Única | Aerolineas, Flybondi y JetSmart",
+    description: "Maqueta por Unidad | Aerolineas, Flybondi y JetSmart",
+    category: "Maquetas de Avión",
+    price: 60000,
+    isFeatured: false,
+    stock: 1,
+    colors: ["#c0c0c0", "#1F3B77", "#000"],
+    images: [
+      maquetaAerolineas,
+      maquetaFlybondi,
+      maquetaFlybondi2,
+      maquetaJetsmart,
+      maquetaJetsmart2,
+      maquetaJetsmart3,
+    ],
+  },
+  {
+    id: "vasot328dhqwiond3nd26",
+    name: "Uniforme de Vuelo | Estándar ISEAP",
+    description: `
+      Vestimenta acorde a entrevista laboral.\n\n
+
+      Camisa: ARS $ 25.000 \n
+      Pantalón: ARS $ 35.000 \n
+      Saco: ARS $ 35.000 \n
+      Pañuelo: ARS $ 5.000
+    `,
+    category: "Maquetas de Avión",
+    price: 97500,
+    isFeatured: false,
+    stock: 1,
+    colors: ["#c0c0c0", "#1F3B77", "#000"],
+    images: [
+      maniqui1,
+      maniqui2,
+      maniqui3,
+      maniqui4,
+      maniqui5,
+      maniqui6,
+      maniqui7,
+    ],
   },
 ];
