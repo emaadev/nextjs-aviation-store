@@ -152,7 +152,7 @@ export const allProducts = [
     name: "Porta Credencial y Tarjetero",
     description: "Material Original de Boeing. Resistente y delicado.",
     category: "Accesorios",
-    price: 1999,
+    price: 24499,
     isFeatured: false,
     stock: 1,
     colors: ["#000000", "#343a40"],

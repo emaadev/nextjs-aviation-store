@@ -60,7 +60,7 @@ const Navbar = () => {
           </Link>{" "}
         </div>
 
-        <div
+        {/* <div
           onClick={() =>
             toast.error(
               "Estamos desarrollando esta sección. Por favor intente más tarde."
@@ -97,7 +97,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
 
         <div className="flex items-center justify-center gap-4">
           <Link

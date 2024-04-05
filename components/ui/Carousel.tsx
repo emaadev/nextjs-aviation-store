@@ -39,7 +39,7 @@ const Carousel = ({ images, interval = 3000 }: CarouselProps) => {
       ))}
 
       <div className="absolute bottom-10 left-1/2 flex items-center justify-center gap-2 z-50">
-        {images.map((image: any, index: any) => (
+        {images.map((_: any, index: any) => (
           <div
             key={index}
             className={`w-2 h-2 rounded-full ${
