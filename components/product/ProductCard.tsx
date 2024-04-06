@@ -72,7 +72,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             product.stock === 0 ? "text-red-600" : "text-blue-600"
           }`}
         >
-          {product.stock} productos en stock
+          Producto en stock
         </span>
       </footer>
     </article>

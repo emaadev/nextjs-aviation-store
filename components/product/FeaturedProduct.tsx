@@ -74,7 +74,7 @@ const FeaturedProduct = ({ product }: FeaturedProduct) => {
               stock === 0 ? "text-red-600" : "text-blue-600"
             }`}
           >
-            {stock} producto/s en stock
+            Producto en stock
           </span>
         </div>
 
