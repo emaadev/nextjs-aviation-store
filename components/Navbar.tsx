@@ -22,6 +22,7 @@ const Navbar = () => {
     <nav className="fixed z-[990] w-full px-6 lg:px-24 py-4 flex items-center justify-between h-20 bg-white/90 backdrop-blur-sm shadow-md">
       <Link href="/" className="flex justify-between items-center gap-4">
         <Image src="/logo-navbar.png" width="60" height="60" alt="ISEAP Logo" />
+
         <div className="flex flex-col">
           <h4 className="text-[16px] lg:text-[20px] font-bold -mb-1">
             ISEAP Tienda Oficial

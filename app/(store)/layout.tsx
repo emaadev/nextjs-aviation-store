@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 import { CartProvider } from "@/context/CartContext";
 
-import "./globals.css";
+import "../globals.css";
 
 export default function RootLayout({
   children,

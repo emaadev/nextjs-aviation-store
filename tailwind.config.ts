@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "footer-texture": "url('/footer-texture.png')",
+        "footer-texture": "url('footer-texture.png')",
       },
     },
   },
