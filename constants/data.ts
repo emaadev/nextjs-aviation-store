@@ -55,6 +55,8 @@ import raybanDama6 from "@/public/products/rayban-dama-6.jpeg";
 import raybanRedondo1 from "@/public/products/rayban-redondo-1.jpeg";
 import raybanRedondo2 from "@/public/products/rayban-redondo-2.jpeg";
 
+import pasapanuelo from "@/public/products/pasapanuelo.png"
+
 export const allProducts = [
   {
     id: "hdh328dhqwiond3nd13",
@@ -72,7 +74,7 @@ export const allProducts = [
     name: "Libreta de Vuelo",
     description: "Modelo eco-cuero. Excelente terminación y calidad",
     category: "Libretas",
-    price: 44999,
+    price: 54999,
     isFeatured: true,
     stock: 1,
     colors: ["#AC9B7C", "#343a40"],
@@ -94,7 +96,7 @@ export const allProducts = [
     name: "Lanyard Boeing - Modelo Reflectivo",
     description: "Llavero Original de Boeing. Resistente de alta calidad.",
     category: "Llaveros",
-    price: 25000,
+    price: 45000,
     isFeatured: false,
     stock: 1,
     colors: ["#888888", "#343a40", "#EAEF27"],
@@ -141,7 +143,7 @@ export const allProducts = [
     description:
       "Material Original de Boeing. Resistente y delicado. Correa extensible.",
     category: "Accesorios",
-    price: 29900,
+    price: 49900,
     isFeatured: false,
     stock: 1,
     colors: ["#1F3B77", "#A0A6B3", "#fff"],
@@ -152,7 +154,7 @@ export const allProducts = [
     name: "Porta Credencial y Tarjetero",
     description: "Material Original de Boeing. Resistente y delicado.",
     category: "Accesorios",
-    price: 30000,
+    price: 40000,
     isFeatured: false,
     stock: 1,
     colors: ["#000000", "#343a40"],
@@ -164,7 +166,7 @@ export const allProducts = [
     description:
       "Vaso térmico con logo de ISEAP. Ideal para bebidas calientes.",
     category: "Accesorios",
-    price: 22000,
+    price: 30000,
     isFeatured: false,
     stock: 1,
     colors: ["#c0c0c0", "#1F3B77", "#000"],
@@ -205,13 +207,13 @@ export const allProducts = [
     description: `
       Vestimenta acorde a entrevista laboral.\n\n
 
-      Camisa: ARS $ 25.000 \n
-      Pantalón: ARS $ 35.000 \n
-      Saco: ARS $ 35.000 \n
-      Pañuelo: ARS $ 5.000
+      Camisa: ARS $ 30.000 \n
+      Pantalón: ARS $ 40.000 \n
+      Saco: ARS $ 40.000 \n
+      Pañuelo: ARS $ 7.500
     `,
-    category: "Maquetas de Avión",
-    price: 97500,
+    category: "Uniforme",
+    price: 117500,
     isFeatured: false,
     stock: 1,
     colors: ["#c0c0c0", "#1F3B77", "#000"],
@@ -230,7 +232,7 @@ export const allProducts = [
     name: "Lentes RayBan Aviador",
     description: "Lentes Originales RayBan Modelo Aviador",
     category: "Lentes de Sol",
-    price: 150000,
+    price: 250000,
     isFeatured: true,
     stock: 1,
     colors: ["#000"],
@@ -241,7 +243,7 @@ export const allProducts = [
     name: "Lentes RayBan Estilo Exclusive",
     description: "Lentes Originales RayBan Modelo Exclusive",
     category: "Lentes de Sol",
-    price: 150000,
+    price: 250000,
     isFeatured: false,
     stock: 1,
     colors: ["#000"],
@@ -259,10 +261,21 @@ export const allProducts = [
     name: "Lentes RayBan Redondos Exclusive",
     description: "Lentes Originales RayBan Modelo Exclusive",
     category: "Lentes de Sol",
-    price: 150000,
+    price: 250000,
     isFeatured: false,
     stock: 1,
     colors: ["#000"],
     images: [raybanRedondo1, raybanRedondo2],
+  },
+  {
+    id: "vasot328dhqwiond3nd30",
+    name: "Pasapañuelo ISEAP",
+    description: "Traba Pañuelo",
+    category: "Uniforme",
+    price: 10000,
+    isFeatured: false,
+    stock: 1,
+    colors: ["#000"],
+    images: [pasapanuelo],
   },
 ];
