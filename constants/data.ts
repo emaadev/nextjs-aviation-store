@@ -208,12 +208,12 @@ export const allProducts = [
       Vestimenta acorde a entrevista laboral.\n\n
 
       Camisa: ARS $ 30.000 \n
-      Pantalón: ARS $ 40.000 \n
-      Saco: ARS $ 40.000 \n
-      Pañuelo: ARS $ 7.500
+      Pantalón: ARS $ 50.000 \n
+      Saco: ARS $ 50.000 \n
+      Pañuelo: ARS $ 10.000
     `,
     category: "Uniforme",
-    price: 117500,
+    price: 140000,
     isFeatured: false,
     stock: 1,
     colors: ["#c0c0c0", "#1F3B77", "#000"],
