@@ -63,7 +63,7 @@ export const allProducts = [
     name: "Lapicera ISEAP",
     description: "Lapicera con sellado de ISEAP",
     category: "Accesorios",
-    price: 1499,
+    price: 1500,
     isFeatured: false,
     stock: 1,
     colors: ["#1F3B77", "#000"],
